@@ -12,7 +12,13 @@ public class Player : MonoBehaviour
     
     void Update()
     {
-        float moveHorizontal = Input.GetAxis("Horizontal");
-        rb.linearVelocity = new Vector2(moveHorizontal * speed, rb.linearVelocity.y);
+        float moveHorizontal = Input.GetAxis("Horizontal"); //reconhecer o movimento horizontal
+        rb.linearVelocity = new Vector2(moveHorizontal * speed, rb.linearVelocity.y);//vai aplicar a velocidade no rigidbody
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            rb.AddForce(new Vector2(0f, 5f), ForceMode2D.Impulse); // vai dar força ao pulo
+
+        }
     }
 }
