@@ -3,4 +3,6 @@ a primeira aula envolvendo o github e versionamento - Gabriel Cândido Moreira
 
 25/08/26 - Como extrusão do professor, eu tenho que atualizar o read me a cada alteração
 27/08/26 - Hoje tevemos que preencher um documento de game dising sobre o que queremos e a história do jogo que vamos criar
-17/09/26 timemos o guia do professor e a tutoria dele para criar o movimento e o pulo
+17/09/26 - timemos o guia do professor e a tutoria dele para criar o movimento e o pulo
+22/09/26 - Foi nos dado as instruções para a criação da movimentação e pulo do personagem pricipal
+24/09/26 - hoje fizemos o primeiro cenário do jogo
