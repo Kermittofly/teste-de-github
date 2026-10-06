@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Ground
   - Transporte
+  - reset
+  - Dano
+  - alavanca
   layers:
   - Default
   - TransparentFX
@@ -45,6 +48,9 @@ TagManager:
     locked: 0
   - name: New Layer 1
     uniqueID: 1516202519
+    locked: 0
+  - name: New Layer 2
+    uniqueID: 1662932871
     locked: 0
   m_RenderingLayers:
   - Default
