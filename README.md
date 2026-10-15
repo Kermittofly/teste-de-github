@@ -8,3 +8,4 @@ a primeira aula envolvendo o github e versionamento - Gabriel Cândido Moreira
 24/09/26 - hoje fizemos o primeiro cenário do jogo
 06/10/26 - atividade de colocar uma nova mecânica no jogo
 08/10/26 - uso do tilemap para arrumaro o cenário e a coleta do assets
+15/10/26 - criação da tela de game over
