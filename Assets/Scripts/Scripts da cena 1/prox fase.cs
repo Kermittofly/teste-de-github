@@ -6,11 +6,11 @@ public class proxfase : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.P))
+        if (Input.GetKeyDown(KeyCode.F))
         {
             if (Proxfase != null)
             {
-                SceneManager.LoadScene(2);
+                SceneManager.LoadScene(2);//ele carrega a proxima cena
             }
         }
     }
@@ -19,7 +19,7 @@ public class proxfase : MonoBehaviour
     {
         if (collision.CompareTag("proxfase"))
         {
-            Proxfase = collision.gameObject;
+            Proxfase = collision.gameObject;//Proxfase para de ser vazio e resebe uma colisão
         }
     }
 
@@ -29,7 +29,7 @@ public class proxfase : MonoBehaviour
         {
             if (collision.gameObject == Proxfase)
             {
-                Proxfase = null;
+                Proxfase = null;//quando o Proxfase não tiver a colisão, ele se torna vazio
             }
         }
     }

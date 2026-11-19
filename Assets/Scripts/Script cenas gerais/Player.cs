@@ -10,7 +10,7 @@ public class Player : MonoBehaviour
     public MenuScene menu;
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
+        rb = GetComponent<Rigidbody2D>();//ele vai pegar os componentes/características de física
     }
 
     
@@ -35,7 +35,7 @@ public class Player : MonoBehaviour
 
         if (collision.gameObject.CompareTag("Vitória"))
         {
-            menu.vitoria();
+            menu.vitoria();//se o colisor tiver a tag vitória ele puxará a tela correstondente
         }
     }
 
@@ -48,7 +48,7 @@ public class Player : MonoBehaviour
 
         if (collision.gameObject.CompareTag("Dano"))
         {
-            menu.MostrarGameOver();
+            menu.MostrarGameOver();//se o colisor tiver a tag Dano ele puxará a tela correstondente
         }
 
       

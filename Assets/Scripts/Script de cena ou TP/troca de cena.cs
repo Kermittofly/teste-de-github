@@ -4,13 +4,13 @@ public class trocadecena : MonoBehaviour
 {
     GameObject Trocadecena;
 
-    void Update()
+    void Update()//quando troca de cena for diferente de vazio ele vai ser levado para onde o transporte tem o numeral
     {
         if (Input.GetKeyDown(KeyCode.F))
         {
             if (Trocadecena != null)
             {
-                transform.position = Trocadecena.GetComponent<Transporte>().GetDestination().position;
+                transform.position = Trocadecena.GetComponent<Transporte>().GetDestination().position;//transforma a posição de quem tem o código pegando o destino retornado o scrip transporte
             }
         }
     }
@@ -19,7 +19,7 @@ public class trocadecena : MonoBehaviour
     {
         if (collision.CompareTag("Transporte"))
         {
-                Trocadecena = collision.gameObject;
+                Trocadecena = collision.gameObject;//troca de cena para de ser vazio e resebe uma colisão
         }
     }
 
@@ -29,7 +29,7 @@ public class trocadecena : MonoBehaviour
         {
             if (collision.gameObject == Trocadecena)
             {
-                Trocadecena = null;
+                Trocadecena = null;//quando o trocadecena não tiver a colisão, ele se torna vazio
             }
         }
     }
